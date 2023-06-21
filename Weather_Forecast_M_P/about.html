@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_Us</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #about_section {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            margin: 100px 0px;
+        }
+
+        h1{
+            margin-bottom: 20px;
+            color: blue;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        #about {
+            width: 50%;
+            text-align: center;
+        }
+
+        .footer {
+            display: none;
+        }
+
+        @media(max-width:550px) {
+
+            .footer {
+                width: 100%;
+                display: block;
+                position: sticky;
+                color: white;
+                bottom: 0;
+                background-color: rgb(59, 57, 57);
+                text-align: center;
+                height: 95px;
+                font-size: 12px;
+            }
+        }
+
+        @media(min-width:550px) {
+
+            .footer {
+                width: 100%;
+                display: block;
+                position: fixed;
+                color: white;
+                bottom: 0;
+                font-size: 12px;
+                background-color: rgb(59, 57, 57);
+                text-align: center;
+                height: 57px;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="about_section">
+        <div id="about">
+            <h1 >About Us</h1>
+            <p>We work hard to ensure that the results presented by our website are correct, and accurately reflect
+                real world calculations based on the user supplied data. However, we do not guarantee that this will be
+                the case in all situations. All of our Weather forecaste content is provided “as is”, without warranty of
+                any kind.</p>
+
+            <p> Our Weather forecaste website are provided for illustrative purposes only, they do not take your personal
+                circumstances into consideration and the results are not guaranteed to be accurate or fit for any
+                purpose. The presented results should not be taken as professional advice, or relied upon as the sole
+                basis for making important decisions.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <h2>© Copyright 2022 - 2023 Weather_Forecast.com. All rights reserved.</h2>
+        </div>
+    </section>
+</body>
+
+</html>
