@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_us</title>
+    <style>
+        /* Contact section*/
+#contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    
+}
+#contact-section::after{
+    background: url('c1.png') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 36%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.contact{
+    display: none;
+}
+
+.footer { 
+            display: none;
+        }
+
+@media(max-width:550px){
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 150px;
+        color:blue;   
+        justify-content: center;   
+    }
+    .footer{
+            width: 100%;
+            display: block;
+            position: fixed;
+            color: white;
+            bottom: 0;
+            background-color: rgb(59, 57, 57);
+            text-align: center;
+            height: 95px;
+            font-size: 12px;
+    }
+    .contact button{
+    width: 56px;
+    margin-left: 50px;
+}
+}
+@media(min-width:550px){
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 500px;
+        color:blue;
+        margin-bottom: 15px; 
+        justify-content: center;
+        
+    }
+    .footer{
+            width: 100%;
+            display: block;
+            position: fixed;
+            color: white;
+            bottom: 0;
+            font-size: 12px;
+            background-color: rgb(59, 57, 57);
+            text-align: center;
+            height: 57px;
+            
+    }
+    .contact button{
+    width: 56px;
+    margin-left: 200px;
+}
+}
+.gap{
+    margin: 5px 0px;
+}
+
+    </style>
+</head>
+<body>
+    <section id="contact-section">
+        <div class="contact">
+            <h2 align="center">Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" name="customer-name" id="name" class="gap" placeholder="Enter your name">
+            <label for="email">Email</label>
+            <input type="email" name="customer-email" id="email" class="gap" placeholder="Enter your email">
+            <label for="phonenumber">Phone Number</label>
+            <input type="number" name="customer-number" id="phonenumber" class="gap" placeholder="Enter your phone number">
+            <label for="textarea">Message</label>
+            <textarea name="customer-message" id="textarea" class="gap"></textarea>
+            <button><a href="submit.html">Submit</a></button>
+        </div>
+    </section>
+    <section>
+        <div class="footer">
+            <h2>© Copyright 2022 - 2023 Weather_forecast.com. All rights reserved.</h2>
+        </div>
+    </section>
+</body>
+</html>

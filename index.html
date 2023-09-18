@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Weather_Forecast</title>
+</head>
+
+<body onload="DefaultScreen()">
+<div class="box">
+    <header>
+        <nav class="navbar">
+            <ul id="navigation">
+                <img src="download.png" alt="Icon" class="icon">
+                <li><a href="#">Home</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                
+                <div class="place-container">
+                    <div class="ptn"> 
+                        <p id="inputContainer"><input type="text" id="cityInput" placeholder="Enter city here"></p>
+                        <button type="button" onclick="GetInfo()" class="button"><img src="searchicon.png" alt="Search" class="btn"></button>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 25 May
+                </div>
+                <div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="place-container">
+        <div class="p_container">
+            <h1>Current weather</h1>
+            <h2 id="cityName">Mumbai</h2> 
+        </div>
+    </div>
+
+
+    <div id="weatherContainer">
+        <div id="iconsContainer">
+            <div class="icons">
+                <p class="weather" id="day1"></p>
+                <div class="image"><img src="dots.jpg" class="imgClass" id="img1"></div>
+                <p class="minValues" id="day1Min">Loading...</p>
+                <p class="maxValues" id="day1Max">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day2"></p>
+                <div class="image"><img src="dots.jpg" class="imgClass" id="img2"></div>
+                <p class="minValues" id="day2Min">Loading...</p>
+                <p class="maxValues" id="day2Max">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day3"></p>
+                <div class="image"><img src="dots.jpg" class="imgClass" id="img3"></div>
+                <p class="minValues" id="day3Min">Loading...</p>
+                <p class="maxValues" id="day3Max">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day4"></p>
+                <div class="image"><img src="dots.jpg" class="imgClass" id="img4"></div>
+                <p class="minValues" id="day4Min">Loading...</p>
+                <p class="maxValues" id="day4Max">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day5"></p>
+                <div class="image"><img src="dots.jpg" class="imgClass" id="img5"></div>
+                <p class="minValues" id="day5Min">Loading...</p>
+                <p class="maxValues" id="day5Max">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
